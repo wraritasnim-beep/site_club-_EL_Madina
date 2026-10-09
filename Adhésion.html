@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Adhésion - Club Culturel El Medina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-club">
+<header class="site-header">
+    <div class="logo">
+        <h1>Club Culturel El Medina</h1>
+    </div>
+
+    <nav class="main-nav">
+
+        <ul class="nav-list menu-desktop">
+            <li><a href="home.html" >Accueil</a></li>
+            <li><a href="index.html">Connexion</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profil</a></li>
+            <li><a href="Galerie.html">Galerie</a></li>
+            <li><a href="Adhésion.html" class="active">Adhésion</a></li>
+            <li><a href="Calendrier.html">Calendrier</a></li>
+        </ul>
+
+        <input type="checkbox" id="menu-toggle" hidden>
+
+        <label for="menu-toggle" class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="home.html">Accueil</a></li>
+                <li><a href="index.html">Connexion</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">Profil</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="Adhésion.html">Adhésion</a></li>
+                <li><a href="Calendrier.html">Calendrier</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+   <main>
+
+    <h2>Devenez membre du Club Culturel El Medina</h2>
+
+    <p class="intro">
+        Rejoindre le Club Culturel El Medina vous permet de bénéficier de la priorité
+        sur les réservations d'événements, de tarifs réduits sur nos ateliers et spectacles,
+        ainsi que d'une newsletter exclusive. Votre adhésion contribue également au
+        soutien et au rayonnement de la culture locale.
+    </p>
+
+    <form class="form-container1">
+
+        <fieldset>
+            <legend class="AB">Informations personnelles</legend>
+
+            <div class="form-group">
+                <label for="nom">Nom complet<span class="required"> * </span></label>
+                <input 
+                    type="text" 
+                    id="nom" 
+                    name="nom" 
+                    required 
+                    aria-required="true">
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="email">Email  <span class="required">*</span> </label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    aria-required="true">
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input 
+                    type="tel" 
+                    id="telephone" 
+                    name="telephone"
+                    pattern="[0-9]{8}"
+                    placeholder="Ex: 12345678">
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="date-naissance">Date de naissance</label>
+                <input 
+                    type="date" 
+                    id="date-naissance" 
+                    name="date-naissance">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend class="AB">Vos préférences</legend>
+
+            <div class="form-group">
+                <label for="interets">
+                    Choisissez vos soirées préférées (Ctrl/Cmd pour sélection multiple)
+                </label>
+                <select 
+                    id="interets" 
+                    name="interets[]" 
+                    multiple 
+                    size="5">
+
+                    <option value="Gnawa">Soirée Gnawa</option>
+                    <option value="Rachidia">Soirée Rachidia</option>
+                    <option value="Soufie">Soirée Soufie</option>
+                    <option value="Jazz">Soirée Jazz</option>
+
+                </select>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="message">Message / Motivation</label>
+                <textarea  id="message" name="message" rows="4"placeholder="Expliquez votre motivation à rejoindre le club..."></textarea>
+            </div>
+
+        </fieldset>
+
+        <button type="submit" class=" btn btn-primary">
+            Envoyer 
+        </button>
+
+    </form><br><br>
+     <span class="required">*Champs obligatoires</span> 
+     
+
+</main>
+
+<footer class="site-footer">
+      <p>© 2026 Club Culturel El Medina – Tunis | Tous droits réservés</p>
+      <p><a href="contact.html">Nous contacter</a> | <a href="about.html">À propos</a></p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

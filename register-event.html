@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register-event - Club Culturel El Medina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-club">
+<header class="site-header">
+    <div class="logo">
+        <h1>Club Culturel El Medina</h1>
+    </div>
+
+    <nav class="main-nav">
+
+        <ul class="nav-list menu-desktop">
+            <li><a href="home.html" >Accueil</a></li>
+            <li><a href="index.html">Connexion</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profil</a></li>
+            <li><a href="Galerie.html">Galerie</a></li>
+            <li><a href="Adhésion.html">Adhésion</a></li>
+            <li><a href="Calendrier.html">Calendrier</a></li>
+        </ul>
+
+        <input type="checkbox" id="menu-toggle" hidden>
+
+        <label for="menu-toggle" class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="home.html">Accueil</a></li>
+                <li><a href="index.html">Connexion</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">Profil</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="Adhésion.html">Adhésion</a></li>
+                <li><a href="Calendrier.html">Calendrier</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+    
+<main>
+    <h2>Inscription à l'événement</h2>
+
+    <form id="register-form">
+        <input type="text" id="nom" placeholder="Nom complet" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="telephone" placeholder="Téléphone" required>
+        <input type="number" id="places" placeholder="Nombre de places" required>
+        <textarea id="message" placeholder="Remarques"></textarea>
+
+        <div id="success-message" class="success" style="display:none;"></div>
+        <div id="error-message" class="error" style="display:none;"></div>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+</main>
+    <footer class="site-footer">
+     <p>© 2026 Club Culturel El Medina - Tunis | Tous droits réservés</p>
+     <p><a href="contact.html">Nous contacter</a> | <a href="about.html">À propos</a></p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
